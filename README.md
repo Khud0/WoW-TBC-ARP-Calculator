@@ -1,6 +1,7 @@
 # WoW-TBC-ARP-Calculator
 
 A simple, yet functional WoW TBC ARP Calculator.
+
 Screenshot of how it looks like: https://i.postimg.cc/dQxZ60Dn/ARP-Calculator.png
 
 This tool allows you to dynamically switch between bosses from most popular TBC dungeons.
