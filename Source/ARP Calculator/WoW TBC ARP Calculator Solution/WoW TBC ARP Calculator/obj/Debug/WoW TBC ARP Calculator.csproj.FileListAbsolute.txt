@@ -1,0 +1,20 @@
+D:\ARP Calculator\WoW TBC ARP Calculator Solution\WoW TBC ARP Calculator\bin\Debug\WoW TBC ARP Calculator.exe.config
+D:\ARP Calculator\WoW TBC ARP Calculator Solution\WoW TBC ARP Calculator\bin\Debug\WoW TBC ARP Calculator.exe
+D:\ARP Calculator\WoW TBC ARP Calculator Solution\WoW TBC ARP Calculator\bin\Debug\WoW TBC ARP Calculator.pdb
+D:\ARP Calculator\WoW TBC ARP Calculator Solution\WoW TBC ARP Calculator\obj\Debug\WoW TBC ARP Calculator.csprojResolveAssemblyReference.cache
+D:\ARP Calculator\WoW TBC ARP Calculator Solution\WoW TBC ARP Calculator\obj\Debug\WoW_TBC_ARP_Calculator.Form1.resources
+D:\ARP Calculator\WoW TBC ARP Calculator Solution\WoW TBC ARP Calculator\obj\Debug\WoW_TBC_ARP_Calculator.Properties.Resources.resources
+D:\ARP Calculator\WoW TBC ARP Calculator Solution\WoW TBC ARP Calculator\obj\Debug\WoW TBC ARP Calculator.csproj.GenerateResource.Cache
+D:\ARP Calculator\WoW TBC ARP Calculator Solution\WoW TBC ARP Calculator\obj\Debug\WoW TBC ARP Calculator.csproj.CoreCompileInputs.cache
+D:\ARP Calculator\WoW TBC ARP Calculator Solution\WoW TBC ARP Calculator\obj\Debug\WoW TBC ARP Calculator.exe
+D:\ARP Calculator\WoW TBC ARP Calculator Solution\WoW TBC ARP Calculator\obj\Debug\WoW TBC ARP Calculator.pdb
+D:\1 Coding-Related\My Projects\C#\WoW-TBC-ARP-Calculator-master\Source\ARP Calculator\WoW TBC ARP Calculator Solution\WoW TBC ARP Calculator\bin\Debug\WoW TBC ARP Calculator.exe.config
+D:\1 Coding-Related\My Projects\C#\WoW-TBC-ARP-Calculator-master\Source\ARP Calculator\WoW TBC ARP Calculator Solution\WoW TBC ARP Calculator\bin\Debug\WoW TBC ARP Calculator.exe
+D:\1 Coding-Related\My Projects\C#\WoW-TBC-ARP-Calculator-master\Source\ARP Calculator\WoW TBC ARP Calculator Solution\WoW TBC ARP Calculator\bin\Debug\WoW TBC ARP Calculator.pdb
+D:\1 Coding-Related\My Projects\C#\WoW-TBC-ARP-Calculator-master\Source\ARP Calculator\WoW TBC ARP Calculator Solution\WoW TBC ARP Calculator\obj\Debug\WoW TBC ARP Calculator.csprojAssemblyReference.cache
+D:\1 Coding-Related\My Projects\C#\WoW-TBC-ARP-Calculator-master\Source\ARP Calculator\WoW TBC ARP Calculator Solution\WoW TBC ARP Calculator\obj\Debug\WoW_TBC_ARP_Calculator.Form1.resources
+D:\1 Coding-Related\My Projects\C#\WoW-TBC-ARP-Calculator-master\Source\ARP Calculator\WoW TBC ARP Calculator Solution\WoW TBC ARP Calculator\obj\Debug\WoW_TBC_ARP_Calculator.Properties.Resources.resources
+D:\1 Coding-Related\My Projects\C#\WoW-TBC-ARP-Calculator-master\Source\ARP Calculator\WoW TBC ARP Calculator Solution\WoW TBC ARP Calculator\obj\Debug\WoW TBC ARP Calculator.csproj.GenerateResource.cache
+D:\1 Coding-Related\My Projects\C#\WoW-TBC-ARP-Calculator-master\Source\ARP Calculator\WoW TBC ARP Calculator Solution\WoW TBC ARP Calculator\obj\Debug\WoW TBC ARP Calculator.csproj.CoreCompileInputs.cache
+D:\1 Coding-Related\My Projects\C#\WoW-TBC-ARP-Calculator-master\Source\ARP Calculator\WoW TBC ARP Calculator Solution\WoW TBC ARP Calculator\obj\Debug\WoW TBC ARP Calculator.exe
+D:\1 Coding-Related\My Projects\C#\WoW-TBC-ARP-Calculator-master\Source\ARP Calculator\WoW TBC ARP Calculator Solution\WoW TBC ARP Calculator\obj\Debug\WoW TBC ARP Calculator.pdb
