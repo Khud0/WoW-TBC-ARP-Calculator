@@ -41,6 +41,7 @@ namespace WoW_TBC_ARP_Calculator
         int executioner = 840; int executionerOn = 0; // Executioner - Weapon Enchant Proc
         int sunderArmor = 520;  // Sunder Armor - Warrior's Proc from Devastate/Sunder Armor
         int exposeArmor = 410; // Expose Armor - Rogue's CP skill;
+        int highestARP = 0; // ARP from either Sunder Armor or Expose Armor
         int madness = 300; int madnessOn = 0; // Madness of The Betrayer - trinket's Proc
         int crystal = 200; int crystalOn = 0; // Crystal Yield - Un'goro Crystal consumable
         int coil = 1000; int coilOn = 0; // Warp-Spring Coil - Rogue's trinket
@@ -112,8 +113,50 @@ namespace WoW_TBC_ARP_Calculator
             madnessOn = cbMadness.Checked ? 1 : 0;
             crystalOn = cbCrystal.Checked ? 1 : 0;
             coilOn = cbCoil.Checked ? 1 : 0;
+            // Check if the chosen ARP sources stack with each other
+            CheckStacking();
             // Calculate how much ARP you have in total and change the TextBox values
             CountArmorAfterReduction();
+        }
+ 
+        private void CheckStacking()
+        // Check if the chosen ARP sources stack with each other
+        {
+            // Crystal doesn't stack with with Expose Armor / Sunder Armor
+            if (crystalOn == 1)
+            {
+                if (trackSunder.Value >= 1 || trackExpose.Value >= 1)
+                {
+                    cbCrystal.ForeColor = Color.Red;
+                    crystalOn = 0; // Remove the Crystal ARP from the formula;
+                } else cbCrystal.ForeColor = Color.Black;
+            } else cbCrystal.ForeColor = Color.Black;
+
+            // Count if Expose Armor > Sunder Armor with the chosen talents/stacks
+            float sunderARP = trackSunder.Value * sunderArmor;
+            float exposeARP = trackExpose.Value * (1f + 0.25f*trackExposeImproved.Value) * exposeArmor; // 25% and 50% more armor reduction from Talents
+
+            //highestARP = (int)Math.Max(sunderARP, exposeARP); // Value to be used in the calculation
+            // int highestARP is just added in the total ARP formula, without any checking or multiplying
+            if (sunderARP > exposeARP)
+            {
+                highestARP = (int)sunderARP;
+                lbSunder.ForeColor = Color.Black;
+                if (trackExpose.Value > 0) lbExpose.ForeColor = Color.Red; else lbExpose.ForeColor = Color.Black;
+            } else if (sunderARP < exposeARP)
+            {
+                highestARP = (int)exposeARP;
+                lbExpose.ForeColor = Color.Black;
+                if (trackSunder.Value > 0) lbSunder.ForeColor = Color.Red; else lbSunder.ForeColor = Color.Black;
+            } else 
+            // if exposeARP = sunderARP or they are equal to 0
+            {
+                highestARP = 0;
+                lbSunder.ForeColor = Color.Black;
+                lbExpose.ForeColor = Color.Black;
+            }
+            
+
         }
 
         private void CountArmorAfterReduction()
@@ -124,17 +167,12 @@ namespace WoW_TBC_ARP_Calculator
             bool inputIsNotText = int.TryParse(tbPassiveARP.Text, out int passive);
             if (inputIsNotText) myARP += passive;
             bool inputIsNotText2 = int.TryParse(tbExtraARP.Text, out int extra);
-            if (inputIsNotText2) myARP += extra;
-            
-            // Count if Expose Armor > Sunder Armor in this case
-            float sunderARP = trackSunder.Value * sunderArmor;
-            float exposeARP = trackExpose.Value * (1f + 0.25f*trackExposeImproved.Value) * exposeArmor; // 25% and 50% more armor reduction from Talents
-            int highARP = (int)Math.Max(sunderARP, exposeARP); // Value to be used in the calculation
+            if (inputIsNotText2) myARP += extra;                      
 
             // Count the total ARP values with all the Checks
             totalARP = (faerieFire*faerieFireOn) + (cor*corOn) + (executioner*executionerOn) + (madness*madnessOn)
                         + (crystal*crystalOn) + (coil*coilOn) + trackAnnihilator.Value*annihilator // Other Items, Skills and Consumables
-                        + highARP // ARP From Expose Armor / Sunder Armor
+                        + highestARP // ARP From Expose Armor / Sunder Armor
                         + myARP; // ARP That user typed into the Passive and Extra ARP textboxes
             tbTotalARP.Text = totalARP.ToString();            
 

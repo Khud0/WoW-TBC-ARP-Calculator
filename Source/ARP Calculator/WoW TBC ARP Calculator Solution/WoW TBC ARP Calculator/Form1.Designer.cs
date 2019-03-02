@@ -57,8 +57,8 @@
             this.trackExposeImproved = new System.Windows.Forms.TrackBar();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
+            this.lbSunder = new System.Windows.Forms.Label();
+            this.lbExpose = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.trackAnnihilator = new System.Windows.Forms.TrackBar();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
@@ -67,10 +67,11 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.linksToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.khud0authorTwitterToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.sourceCodeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.excaliburWoW243ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.sourceCodeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.resetToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.lbVersion = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -376,27 +377,27 @@
             this.pictureBox8.TabIndex = 28;
             this.pictureBox8.TabStop = false;
             // 
-            // label4
+            // lbSunder
             // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.label4.Location = new System.Drawing.Point(62, 172);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(107, 13);
-            this.label4.TabIndex = 29;
-            this.label4.Text = "Sunder Armor Stacks";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbSunder.AutoSize = true;
+            this.lbSunder.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.lbSunder.Location = new System.Drawing.Point(62, 172);
+            this.lbSunder.Name = "lbSunder";
+            this.lbSunder.Size = new System.Drawing.Size(107, 13);
+            this.lbSunder.TabIndex = 29;
+            this.lbSunder.Text = "Sunder Armor Stacks";
+            this.lbSunder.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label5
+            // lbExpose
             // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.label5.Location = new System.Drawing.Point(71, 290);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(89, 13);
-            this.label5.TabIndex = 30;
-            this.label5.Text = "Expose Armor CP";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbExpose.AutoSize = true;
+            this.lbExpose.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.lbExpose.Location = new System.Drawing.Point(71, 290);
+            this.lbExpose.Name = "lbExpose";
+            this.lbExpose.Size = new System.Drawing.Size(89, 13);
+            this.lbExpose.TabIndex = 30;
+            this.lbExpose.Text = "Expose Armor CP";
+            this.lbExpose.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label6
             // 
@@ -483,19 +484,19 @@
             this.khud0authorTwitterToolStripMenuItem.Text = "Khud0 (author) - Twitter";
             this.khud0authorTwitterToolStripMenuItem.Click += new System.EventHandler(this.khud0authorTwitterToolStripMenuItem_Click);
             // 
-            // sourceCodeToolStripMenuItem
-            // 
-            this.sourceCodeToolStripMenuItem.Name = "sourceCodeToolStripMenuItem";
-            this.sourceCodeToolStripMenuItem.Size = new System.Drawing.Size(202, 22);
-            this.sourceCodeToolStripMenuItem.Text = "Source Code";
-            this.sourceCodeToolStripMenuItem.Click += new System.EventHandler(this.sourceCodeToolStripMenuItem_Click);
-            // 
             // excaliburWoW243ToolStripMenuItem
             // 
             this.excaliburWoW243ToolStripMenuItem.Name = "excaliburWoW243ToolStripMenuItem";
             this.excaliburWoW243ToolStripMenuItem.Size = new System.Drawing.Size(202, 22);
             this.excaliburWoW243ToolStripMenuItem.Text = "Excalibur WoW 2.4.3";
             this.excaliburWoW243ToolStripMenuItem.Click += new System.EventHandler(this.excaliburWoW243ToolStripMenuItem_Click);
+            // 
+            // sourceCodeToolStripMenuItem
+            // 
+            this.sourceCodeToolStripMenuItem.Name = "sourceCodeToolStripMenuItem";
+            this.sourceCodeToolStripMenuItem.Size = new System.Drawing.Size(202, 22);
+            this.sourceCodeToolStripMenuItem.Text = "Source Code";
+            this.sourceCodeToolStripMenuItem.Click += new System.EventHandler(this.sourceCodeToolStripMenuItem_Click);
             // 
             // resetToolStripMenuItem
             // 
@@ -511,6 +512,16 @@
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
+            // lbVersion
+            // 
+            this.lbVersion.AutoSize = true;
+            this.lbVersion.Location = new System.Drawing.Point(972, 523);
+            this.lbVersion.Name = "lbVersion";
+            this.lbVersion.Size = new System.Drawing.Size(34, 13);
+            this.lbVersion.TabIndex = 38;
+            this.lbVersion.Text = "v1.01";
+            this.lbVersion.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -518,13 +529,14 @@
             this.BackColor = System.Drawing.SystemColors.ControlDark;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1008, 538);
+            this.Controls.Add(this.lbVersion);
             this.Controls.Add(this.gbUser);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.pictureBox9);
             this.Controls.Add(this.trackAnnihilator);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
+            this.Controls.Add(this.lbExpose);
+            this.Controls.Add(this.lbSunder);
             this.Controls.Add(this.pictureBox8);
             this.Controls.Add(this.pictureBox7);
             this.Controls.Add(this.trackExposeImproved);
@@ -607,8 +619,8 @@
         private System.Windows.Forms.TrackBar trackExposeImproved;
         private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.PictureBox pictureBox8;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label lbSunder;
+        private System.Windows.Forms.Label lbExpose;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TrackBar trackAnnihilator;
         private System.Windows.Forms.PictureBox pictureBox9;
@@ -621,6 +633,7 @@
         private System.Windows.Forms.ToolStripMenuItem sourceCodeToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem resetToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
+        private System.Windows.Forms.Label lbVersion;
     }
 }
 
