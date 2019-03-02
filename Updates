@@ -1,0 +1,5 @@
+v1.01 - Stacking
+
+1. Crystal Yield no longer stacks with Expose Armor / Sunder Armor.
+2. Items/Skills etc which don't stack with each other are now highlighted in red color.
+3. Added current version label in the bottom right corner.
